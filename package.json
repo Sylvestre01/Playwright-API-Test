@@ -1,0 +1,26 @@
+{
+  "name": "playwright-api-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "api:test": "playwright test src/tests/api.service.test.js",
+    "pw-test": "npx playwright test --reporter=html",
+    "pw-report": "npx playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com/Sylvestre01/Playwright-API-Test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sylvestre01/Playwright-API-Test/issues"
+  },
+  "homepage": "https://github.com/Sylvestre01/Playwright-API-Test#readme",
+  "keywords": [],
+  "author": "Sylvester Udoh",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.45.3",
+    "@types/node": "^22.0.0"
+  }
+}
