@@ -18,6 +18,12 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Playwright API Test
-        run: npm run api:test
+        run: npm run api:test --reporter=html
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: playwright-results
+          path: playwright-report  # This is where Playwright reports are generated
         env:
           HOME: /root
